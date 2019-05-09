@@ -26,20 +26,17 @@
 
 // let input = prompt('Какое количество дроидов Вы желаете купить?');
 
-// let totalPrice;
+// const totalPrice = input * pricePerDroid;
+
+// const balance = credits - totalPrice;
 
 // let message;
 
 // if (input === null) {
 //   message = 'Отменено пользователем!';
-// } else {
-//   totalPrice = input * pricePerDroid;
-// }
-
-// if (totalPrice > credits) {
+// } else if (totalPrice > credits) {
 //   message = 'Недостаточно средств на счету';
 // } else {
-//   let balance = credits - totalPrice;
 //   message = `Вы купили ${input} дроидов, на счету осталось ${balance} кредитов.`;
 // }
 
