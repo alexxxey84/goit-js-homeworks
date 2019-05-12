@@ -2,44 +2,53 @@
 
 'use strict';
 
-let country = prompt('Укажите страну доставки');
+const country = prompt('Укажите страну доставки');
 
-let deliveryPrice;
+const delPriceChina = 100;
 
-let message;
+const delPriceSouthAmerica = 250;
+
+const delPriceAustralia = 170;
+
+const delPriceIndia = 80;
+
+const delPriceJamaica = 120;
 
 if (country === null) {
-  message = 'Выбор отменен пользователем!';
+  console.log('Выбор отменен пользователем!');
 } else {
   switch (country.toLowerCase()) {
     case 'китай':
-      deliveryPrice = 100;
-      message = `Доставка в ${country} будет стоить ${deliveryPrice} кредитов`;
+      console.log(
+        `Доставка в ${country} будет стоить ${delPriceChina} кредитов`,
+      );
       break;
 
     case 'южная америка':
-      deliveryPrice = 250;
-      message = `Доставка в ${country} будет стоить ${deliveryPrice} кредитов`;
+      console.log(
+        `Доставка в ${country} будет стоить ${delPriceSouthAmerica} кредитов`,
+      );
       break;
 
     case 'австралия':
-      deliveryPrice = 170;
-      message = `Доставка в ${country} будет стоить ${deliveryPrice} кредитов`;
+      console.log(
+        `Доставка в ${country} будет стоить ${delPriceAustralia} кредитов`,
+      );
       break;
 
     case 'индия':
-      deliveryPrice = 80;
-      message = `Доставка в ${country} будет стоить ${deliveryPrice} кредитов`;
+      console.log(
+        `Доставка в ${country} будет стоить ${delPriceIndia} кредитов`,
+      );
       break;
 
     case 'ямайка':
-      deliveryPrice = 120;
-      message = `Доставка в ${country} будет стоить ${deliveryPrice} кредитов`;
+      console.log(
+        `Доставка в ${country} будет стоить ${delPriceJamaica} кредитов`,
+      );
       break;
 
     default:
-      message = 'В вашей стране доставка не доступна';
+      console.log('В вашей стране доставка не доступна');
   }
 }
-
-console.log(message);
